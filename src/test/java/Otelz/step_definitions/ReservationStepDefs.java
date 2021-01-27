@@ -33,14 +33,10 @@ public class ReservationStepDefs {
     public void the_user_should_be_able_to_see_information_page_with_their_information() {
         BrowserUtils.waitForVisibility(new ReservationPage().emailAssertion,10);
 
-        new ReservationPage().emailAssertion.click();
-        new ReservationPage().emailAssertion.sendKeys(Keys.CONTROL,"a");
-        new ReservationPage().emailAssertion.sendKeys(Keys.CONTROL,"c");
 
-        String actual = new ReservationPage().emailAssertion.sendKeys(Keys.CONTROL,"v");
+        String actual = new ReservationPage().emailAssertion.getAttribute("value");
         String expected = ConfigurationReader.get("email");
-        System.out.println(actual);
-        System.out.println(expected);
+
 
         Assert.assertEquals(expected,actual);
 
