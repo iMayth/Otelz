@@ -1,5 +1,5 @@
 Feature: The user should be able to make a reservation on the Otelz.com
-@e2e
+@otelz
   Scenario: See the searching results
     Given The user is on the otel's reservation page
     When The user clicks Rezervasyon Yap button

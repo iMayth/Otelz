@@ -1,5 +1,5 @@
 Feature: The user should be able to manage their reservation
-@e2e
+@otelz
   Scenario: Go to the Rezervasyonu Yonet page
     Given The user is on reservation details page
     When The user clicks Rezervasyonu Iptal Et button

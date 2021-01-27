@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "Otelz/step_definitions",
         dryRun= false,
-        tags="@e2e"
+        tags="@otelz"
 
 )
 public class CukesRunner {
