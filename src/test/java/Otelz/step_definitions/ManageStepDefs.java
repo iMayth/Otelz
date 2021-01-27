@@ -29,6 +29,7 @@ public class ManageStepDefs {
     @When("The user clicks on Kesin Iptal Et button")
     public void the_user_clicks_on_Kesin_Iptal_Et_button() {
         BrowserUtils.waitForClickability(new ManagePage().kesinIptalEt,10);
+
         new ManagePage().kesinIptalEt.click();
     }
     @Then("The user should be able to see the rezervasyonu tamamen iptal et window")
@@ -44,11 +45,13 @@ public class ManageStepDefs {
         new ManagePage().iptalNedeni.click();
         BrowserUtils.waitForClickability(new ManagePage().tumIptalBtn,10);
         new ManagePage().tumIptalBtn.click();
+        BrowserUtils.waitFor(5);
     }
     @Then("The user should be able to see reservation is cancelled message")
     public void the_user_should_be_able_to_see_reservation_is_cancelled_message() {
 
         BrowserUtils.waitForVisibility(new ManagePage().iptalYazisi,10);
+
         System.out.println(new ManagePage().iptalYazisi.getText());
     }
 }

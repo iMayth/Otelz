@@ -20,7 +20,7 @@ public class ManagePage extends BasePage{
     @FindBy(xpath = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]")
     public WebElement iptalTutar;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/button[2]")
+    @FindBy(xpath = "//button[contains(text(),'Kesin İptal Et')]")
     public WebElement kesinIptalEt;
 
     @FindBy(xpath = "/html[1]/body[1]/div[7]/div[2]/div[1]/div[1]/h3[1]")
@@ -35,7 +35,7 @@ public class ManagePage extends BasePage{
     @FindBy(xpath = "/html[1]/body[1]/div[7]/div[2]/div[1]/div[3]/button[1]")
     public WebElement tumIptalBtn;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/h3[1]/span[1]")
+    @FindBy(xpath = "//*[@id=\"userPageView\"]/div/div/div/div[1]/div/div/div[2]/div[1]/h3/span")
     public WebElement iptalYazisi;
 
     @FindBy(xpath = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/i[1]")
